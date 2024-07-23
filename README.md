@@ -90,6 +90,38 @@ export function MyComponent() {
 }
 ```
 
+---
+
+## Documentation
+
+### Build documentation
+
+```sh
+$ npm run docs:build
+```
+
+### Preview documentation
+
+Preview documentation to see if everything went well before publishing it.
+
+```sh
+$ npm run docs:preview
+```
+
+### Documentation in development
+
+```sh
+$ npm run docs:dev
+```
+
+## Run tests
+
+```sh
+$ npm run test
+```
+
+---
+
 ## License
 
 [MIT](LICENSE)

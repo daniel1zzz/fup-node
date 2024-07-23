@@ -1,6 +1,6 @@
 {
   "name": "fup-node-front",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Small module to convert a FileList into an object or array of objects available for use in fup-node",
   "main": "index.js",
   "type": "module",
