@@ -1,0 +1,42 @@
+{
+  "name": "fup-node",
+  "version": "1.0.0",
+  "description": "Upload files to storage in nodejs regardless of the backend framework or library.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "test": "npm run test:clean && vitest run",
+    "test:clean": "del /q tests\\upload_files\\* || rm -rf tests/upload_files/*",
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "vitepress build docs",
+    "docs:preview": "vitepress preview docs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/daniel1zzz/fup-node.git"
+  },
+  "keywords": [
+    "upload-files",
+    "node-js",
+    "node-ts",
+    "multiple-files"
+  ],
+  "author": "Daniel Andino Camacho <daniel.developer.make@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/daniel1zzz/fup-node/issues"
+  },
+  "homepage": "https://github.com/daniel1zzz/fup-node#readme",
+  "devDependencies": {
+    "@types/node": "^20.14.5",
+    "typescript": "^5.4.5",
+    "vitepress": "^1.3.1",
+    "vitest": "^1.6.0"
+  },
+  "dependencies": {
+    "mime": "^4.0.3",
+    "sharp": "^0.33.4"
+  }
+}

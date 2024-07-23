@@ -1,0 +1,22 @@
+{
+  "name": "fup-node-front",
+  "version": "1.0.0",
+  "description": "Small module to convert a FileList into an object or array of objects available for use in fup-node",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "vitest run"
+  },
+  "keywords": [
+    "upload",
+    "files",
+    "frontend"
+  ],
+  "author": "Daniel Andino Camacho",
+  "license": "MIT",
+  "devDependencies": {
+    "happy-dom": "^14.12.3",
+    "jsdom": "^24.1.0",
+    "vitest": "^2.0.3"
+  }
+}

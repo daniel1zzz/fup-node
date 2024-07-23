@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "allowSyntheticDefaultImports": true,
+    "declaration": true,
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "outDir": "./dist",
+    "removeComments": true,
+    "strict": true,
+    "sourceMap": true,
+    "target": "ES2020",
+    "typeRoots": ["./types", "node_modules/@types"],
+    "types": ["node"]
+  },
+  "include": ["src/**/*", "types/**/*"],
+}

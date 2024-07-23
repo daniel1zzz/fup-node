@@ -1,0 +1,4 @@
+node_modules
+dist
+tests/upload_files/*
+/.vitepress
