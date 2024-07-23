@@ -9,6 +9,7 @@
 
 import sharp from "sharp";
 import { isImage } from "../utils/files.js";
+import { FupMiddlewareProps } from "../../types/index.js";
 
 /**
  * Middleware to optimize images in webp format

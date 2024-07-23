@@ -9,6 +9,7 @@
 
 import sharp from "sharp";
 import { fileExists, isImage, readFile } from "../utils/files.js";
+import { FupMiddlewareProps } from "../../types/index.js";
 
 /**
  * Add water mark to image buffer

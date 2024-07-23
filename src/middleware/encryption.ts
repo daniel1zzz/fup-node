@@ -8,6 +8,7 @@
  */
 
 import crypto from "crypto";
+import { FupMiddlewareProps } from "../../types/index.js";
 
 /**
  * Encrypt buffer file with password
