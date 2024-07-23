@@ -6,7 +6,7 @@
  * @param {number} maxFilesSize - Maximum size of uploaded files
  * @param {number} maxFiles - Maximum count of uploaded files
  */
-type ConfigUploads = {
+export type ConfigUploads = {
   path: string;
   relativePath?: boolean;
   maxFilesSize?: number;
@@ -21,7 +21,7 @@ type ConfigUploads = {
  * @param {number} lastModified - Last modification time of the file to upload
  * @param {string} buffer - Buffer of the file to upload in encoded by default base64
  */
-type FileBody = {
+export type FileBody = {
   name: string;
   type: string;
   lastModified: number;
@@ -38,7 +38,7 @@ type FileBody = {
  * @param {number} maxFileSize - Maximum size of the file uploaded default is 6MB.
  * @param {string[]} types - Mime types permitted to be uploaded.
  */
-type SingleUploadSettings = {
+export type SingleUploadSettings = {
   name?: string;
   generateNameByDate?: boolean;
   generateNameByUUID?: boolean;
@@ -57,7 +57,7 @@ type SingleUploadSettings = {
  * @param {number} maxFilesSize - Maximum size of the files uploaded default is 6MB.
  * @param {string[]} types - Mime types permitted to be uploaded.
  */
-type MultipleUploadSettings = {
+export type MultipleUploadSettings = {
   names?: string[];
   generateNamesByDate?: boolean;
   generateNamesByUUID?: boolean;
@@ -76,7 +76,7 @@ type MultipleUploadSettings = {
  * @param {string} buffer - File buffer modified returned from the function
  * @param {string[]} typesPermitted - File type where middleware is allowed to be used
  */
-type FupMiddleware = {
+export type FupMiddleware = {
   middleware: (middProps: FupMiddlewareProps) => Promise<{
     fileName: string;
     fileExtension: string;
@@ -93,7 +93,7 @@ type FupMiddleware = {
  * @param {string} fileExtension - File extension returned from the middleware
  * @param {string} buffer - File buffer returned from the middleware
  */
-type FupMiddlewareProps = {
+export type FupMiddlewareProps = {
   file: FileBody;
   processed: {
     fileName: string;

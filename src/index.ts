@@ -8,6 +8,13 @@ import { randomUUID } from "crypto";
 import * as path from "node:path";
 import { createFile, fileExists, isImage, readFile } from "./utils/files.js";
 import sharp from "sharp";
+import {
+  ConfigUploads,
+  FileBody,
+  FupMiddleware,
+  MultipleUploadSettings,
+  SingleUploadSettings,
+} from "../types/index.js";
 
 export class FupNode {
   private config: ConfigUploads = {
@@ -280,3 +287,12 @@ export class FupNode {
     return readFile(pathFile);
   }
 }
+
+export type {
+  ConfigUploads,
+  FileBody,
+  SingleUploadSettings,
+  MultipleUploadSettings,
+  FupMiddleware,
+  FupMiddlewareProps,
+} from "../types/index.js";
