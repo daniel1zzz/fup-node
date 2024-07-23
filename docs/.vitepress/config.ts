@@ -2,6 +2,7 @@ import { defineConfig } from "vitepress";
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
+  base: "/fup-node/",
   title: "FupNode Documentation",
   description: "Documentation for the fup-node package",
   themeConfig: {
