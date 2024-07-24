@@ -7,13 +7,15 @@
  * @license MIT License
  */
 
+import { encode } from "base64-arraybuffer";
+
 /**
  * Convert ArrayBuffer in string base64 encoding
  * @param {ArrayBuffer} arrayBuffer - Buffer to compose.
  * @returns {Promise<string>} - String base64 representation of file.
  */
 export async function encodeToBase64String(arrayBuffer) {
-  return btoa(String.fromCharCode(...new Uint8Array(arrayBuffer)));
+  return encode(arrayBuffer);
 }
 
 /**
