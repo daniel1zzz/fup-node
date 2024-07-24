@@ -120,7 +120,7 @@ test("The uploadFile function validates that file.name is a valid file name.", a
   try {
     await fileUpload.uploadFile(
       {
-        name: "file^png",
+        name: "file*png",
         type: "image/png",
         lastModified: new Date().getTime(),
         buffer: "aGh0",
@@ -132,7 +132,7 @@ test("The uploadFile function validates that file.name is a valid file name.", a
   } catch (e) {
     //Validation is correct
     return expect(e.message).toBe(
-      "The name of file uploaded <file^png> is not valid!"
+      "The name of file uploaded <file*png> is not valid!"
     );
   }
 

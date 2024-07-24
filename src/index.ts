@@ -88,7 +88,7 @@ export class FupNode {
     }
 
     // Check the name of file uploaded is valid
-    if (!/^[a-zA-Z0-9_ -]+\.[a-zA-Z0-9]+$/.test(file.name)) {
+    if (!/^[^<>:"/\\|?*\x00-\x1F]+$/.test(file.name)) {
       throw new Error(`The name of file uploaded <${file.name}> is not valid!`);
     }
 
@@ -270,7 +270,7 @@ export class FupNode {
    */
   public async getFile(name: string): Promise<Buffer> {
     // Error invalid file name
-    if (!/^[a-zA-Z0-9_ -]+\.[a-zA-Z0-9]+$/.test(name)) {
+    if (!/^[^<>:"/\\|?*\x00-\x1F]+$/.test(name)) {
       throw new Error(`Invalid file name: ${name}`);
     }
 
