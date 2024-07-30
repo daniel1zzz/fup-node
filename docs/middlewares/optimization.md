@@ -12,7 +12,7 @@ function optimization(options?: {
 Example of use
 
 ```ts
-import { optimization } from "fup-node/middleware/optimization";
+import { optimization } from "fup-node/src/middleware/optimization";
 
 // Example instance
 const fupinstance = new FupNode({
