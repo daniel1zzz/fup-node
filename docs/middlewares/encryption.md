@@ -12,7 +12,7 @@ function encryption(options: {
 Example of use
 
 ```ts
-import { desencryptBuffer, encryption } from "fup-node/middleware/encryption";
+import { desencryptBuffer, encryption } from "fup-node/src/middleware/encryption";
 
 // Example instance
 const fupinstance = new FupNode({
