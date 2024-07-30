@@ -31,7 +31,7 @@ function watermark(options: {
 Example of use
 
 ```ts
-import { watermark } from "fup-node/middleware/watermark";
+import { watermark } from "fup-node/src/middleware/watermark";
 
 // Example instance
 const fupinstance = new FupNode({
