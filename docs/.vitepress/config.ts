@@ -48,6 +48,12 @@ export default defineConfig({
           { text: "Middleware optimization", link: "/middlewares/optimization" },
           { text: "Middleware encryption", link: "/middlewares/encryption" },
         ],
+      },
+      {
+        text: "Utilities",
+        items: [
+          { text: "Fast test utility", link: "/utilities/fup-node-tester" },
+        ],
       }
     ],
 
